@@ -1,0 +1,4 @@
+username,firstName,lastName,imageUrl,gender,password
+"ALX408500","Divine","Ukonu","/images/student_female_3.jpg","female","$2y$10$7jlB2BAeROFymhusWewxV.VdCEWJ5x4UZN0oAqti1dut2HSlEq76C"
+"ALX408501","Nkemchor","Ogor","/images/student_male.jpg","male","$2y$10$7jlB2BAeROFymhusWewxV.VdCEWJ5x4UZN0oAqti1dut2HSlEq76C"
+"ALX408502","Miheret","Tadesse","/images/student_female.png","female","$2y$10$7jlB2BAeROFymhusWewxV.VdCEWJ5x4UZN0oAqti1dut2HSlEq76C"
