@@ -2,7 +2,7 @@ question,option1,option2,option3,option4,option5,answer,examId
 'Which command should I use for changing a file owner?', 'chmod', 'su', 'chown', 'chgrp', 'I don\'t know', 'chown', 1
 'Which command should I use to display the exit code of the previous command?', 'echo ?', 'echo $EXITCODE', 'echo $CODE', 'echo $?', 'None of the above', 'echo $?', 1
 'Which command should I use for changing a file owner?', 'chmod', 'su', 'chown', 'chgrp', 'I don\'t know', 'chown', 1
-'Which command should I use to display the exit code of the previous command?', 'echo ?', 'echo $EXITCODE', 'echo $CODE', 'echo $?', 'None of the above', 'echo $?', 1),
+'Which command should I use to display the exit code of the previous command?', 'echo ?', 'echo $EXITCODE', 'echo $CODE', 'echo $?', 'None of the above', 'echo $?', 1
 'Which command should I use for changing a file owner?', 'chmod', 'su', 'chown', 'chgrp', 'I don\'t know', 'chown', 1
 'Which command should I use to display the exit code of the previous command?', 'echo ?', 'echo $EXITCODE', 'echo $CODE', 'echo $?', 'None of the above', 'echo $?', 1
 'Which command should I use for changing a file owner?', 'chmod', 'su', 'chown', 'chgrp', 'I don\'t know', 'chown', 1
