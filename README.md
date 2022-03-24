@@ -36,14 +36,14 @@ This project [Computer Based Testing System](https://alx-cbt-system.live/) was c
 ## Demo :running:
 ![Game Demo](assets/images/demo.gif)
 
-## Instalation :thumbsup:
+## Installation :thumbsup:
 * Enter https://alx-cbt-system.live/ into your browser
 * Password: **soomy42**
 
 | username | Category |
 | ------------- | ------------- |
 | admin  | Admin  |
-| maaerten_vm  | Examiner  |
+| maarten_vm  | Examiner  |
 | faith_okoth  | Examiner  |
 | ALX408500  | Student  |
 | ALX408501  | Student  |
