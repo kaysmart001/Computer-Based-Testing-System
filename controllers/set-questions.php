@@ -1,7 +1,7 @@
 <?php
 include "../helpers/connect.php";
 
-// question,option1,option2,option3,option4,option5,answer,examId
+// question,option1,option2,option3,option4,option5,answer,examId.
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo var_dump($_POST);
