@@ -52,7 +52,7 @@ This project [Computer Based Testing System](https://alx-cbt-system.live/) was c
 ## Authors :black_nib:
 
 * Ukonu Divine Chisom <[Gemma-Mariae](https://github.com/Gemma-Mariae)>
-* Tadesse Miheret <[miheret-eng](https://github.com/miheret-eng)>
+* Tadesse Miheret <[miheret-eng](https://medium.com/@mihherettad2007/3cc1ba8dbe6)>
 * Ogor Nkemchor <[Nkem-wey-sabi](https://github.com/Nkem-wey-sabi)>
 
 ## License :pray:
