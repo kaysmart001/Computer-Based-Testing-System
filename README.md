@@ -11,27 +11,27 @@ This project [Computer Based Testing System](https://alx-cbt-system.live/) was c
 ![Architecture](assets/images/architecture.jpg)
 
 ## Features :speech_balloon:
-###  General Features
-        * Cross-platform
-        * Responsive
-        * Accessible
-        * Supports objective questions
+* **General Features**
+    - Cross-platform
+    - Responsive
+    - Accessible
+    - Supports objective questions
 
 ### User-specific features
-* #### Student
-        - Resumption capability for students
-        - Automatic grading
-        - Question randomization
+* **Student**
+    - Resumption capability for students
+    - Automatic grading
+    - Question randomization
 
-* #### Examiner
-        - Manage exams and set questions for assigned courses.
-        - Activate exams.
-        - Set exam time and instruction.
-        - View all exam results of exams for assigned courses.
+* **Examiner**
+    - Manage exams and set questions for assigned courses.
+    - Activate exams.
+    - Set exam time and instruction.
+    - View all exam results of exams for assigned courses.
 
-* #### Administrator
-        - Register users and courses.
-        - View users and courses.
+* **Administrator**
+    - Register users and courses.
+    - View users and courses.
 
 ## Demo :running:
 ![Game Demo](assets/images/demo.gif)
@@ -51,7 +51,7 @@ This project [Computer Based Testing System](https://alx-cbt-system.live/) was c
 
 ## Authors :black_nib:
 
-* Ukonu Divine Chisom <[Gemma-Mariae](https://github.com/Gemma-Mariae)>
+* Ukonu Divine Chisom <[divine-chisom](https://github.com/divine-chisom)>
 * Tadesse Miheret <[miheret-eng](https://medium.com/@mihherettad2007/3cc1ba8dbe6)>
 * Ogor Nkemchor <[Nkem-wey-sabi](https://github.com/Nkem-wey-sabi)>
 
