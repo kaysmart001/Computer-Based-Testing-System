@@ -1,3 +1,13 @@
+-- phpMyAdmin SQL Dump
+-- version 3.5.2.2
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jul 06, 2013 at 06:56 AM
+-- Server version: 5.5.27
+-- PHP Version: 5.4.7
+
+
 CREATE DATABASE IF NOT EXISTS epiz_33070717_cbttest_db;
 USE epiz_33070717_cbttest_db;
 
