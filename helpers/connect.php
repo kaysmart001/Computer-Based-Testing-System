@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$dbusername = "chisom";
-$dbpassword = "sommyNkem6.9";
-$dbname = "CBT";
+$servername = "sql105.epizy.com";
+$dbusername = "epiz_33070717";
+$dbpassword = "WBtcNlYDj3Y5qkD";
+$dbname = "epiz_33070717_cbttest_db";
 
 // Create connection
 $conn = mysqli_connect($servername, $dbusername, $dbpassword, $dbname);
