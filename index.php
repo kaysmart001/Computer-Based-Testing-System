@@ -3,7 +3,6 @@
 
 <?php
 session_start();
- ini_set("display_errors", 1);
 
  if (!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === false) {
      header("location: views/login.php");
