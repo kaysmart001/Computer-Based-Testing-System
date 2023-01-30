@@ -7,10 +7,6 @@
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
-
-CREATE DATABASE IF NOT EXISTS epiz_33070717_cbttest_db;
-USE epiz_33070717_cbttest_db;
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -32,7 +28,7 @@ SET time_zone = "+00:00";
 
 -- Create the required tables
 
-CREATE TABLE IF NOT EXISTS Student (
+CREATE TABLE 'Student' (
     username VARCHAR(15) PRIMARY KEY NOT NULL,
     firstName CHAR(100) NOT NULL,
     lastName CHAR(100) NOT NULL,
@@ -42,7 +38,7 @@ CREATE TABLE IF NOT EXISTS Student (
 );
 
 
-CREATE TABLE IF NOT EXISTS Administrator (
+CREATE TABLE 'Administrator' (
     username VARCHAR(255) PRIMARY KEY NOT NULL DEFAULT "admin",
     firstName CHAR(100) NOT NULL DEFAULT "Admin",
     lastName CHAR(100) NOT NULL DEFAULT "Admin",
@@ -50,7 +46,7 @@ CREATE TABLE IF NOT EXISTS Administrator (
     pw VARCHAR(255) NOT NULL DEFAULT "$2y$10$B9gGv1ohRO.KubkLY1gyGuwmc0.SNdBYMME8cYsuvVDpC6YdBwNny" -- password
 );
 
-CREATE TABLE IF NOT EXISTS Examiner (
+CREATE TABLE 'Examiner' (
     username VARCHAR(255) PRIMARY KEY NOT NULL,
     firstName CHAR(100) NOT NULL,
     lastName CHAR(100) NOT NULL,
@@ -61,13 +57,13 @@ CREATE TABLE IF NOT EXISTS Examiner (
 );
 
 
-CREATE TABLE IF NOT EXISTS Course (
+CREATE TABLE 'Course' (
     courseId INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     courseTitle VARCHAR(255) NOT NULL,
     courseCode VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS Exam (
+CREATE TABLE 'Exam' (
     examId INT PRIMARY KEY AUTO_INCREMENT,
     instruction VARCHAR(255),
     timeDuration TIME NOT NULL,
@@ -79,7 +75,7 @@ CREATE TABLE IF NOT EXISTS Exam (
 );
 
 
-CREATE TABLE IF NOT EXISTS Question (
+CREATE TABLE 'Question' (
     questionId INT PRIMARY KEY AUTO_INCREMENT,
     question TEXT NOT NULL,
     option1 VARCHAR(255) NOT NULL,
@@ -93,7 +89,7 @@ CREATE TABLE IF NOT EXISTS Question (
 );
 
 
-CREATE TABLE IF NOT EXISTS Student_Result (
+CREATE TABLE 'Student_Result' (
     studentId VARCHAR(255) NOT NULL,
     examId INT NOT NULL,
     score INT NOT NULL,
@@ -107,7 +103,7 @@ CREATE TABLE IF NOT EXISTS Student_Result (
 
 
 -- Intermediary table for Course and Student 
-CREATE TABLE IF NOT EXISTS Course_Student (
+CREATE TABLE 'Course_Student' (
     id INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(15) ,
     courseId INT,
@@ -116,7 +112,7 @@ CREATE TABLE IF NOT EXISTS Course_Student (
 );
 
 -- Intermediary table for Course and Examiner 
-CREATE TABLE IF NOT EXISTS Course_Examiner (
+CREATE TABLE 'Course_Examiner' (
     id INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(255),
     courseId INT,
@@ -139,7 +135,7 @@ SHOW TABLES;
 
 -- Load Student Data from CSV file
 LOAD DATA
-LOCAL INFILE "/var/www/html/chi/models/students.csv"
+LOCAL INFILE "thekaysmart.epizy.com/test/models/students.csv"
 INTO TABLE Student
 FIELDS TERMINATED BY ","
 OPTIONALLY ENCLOSED BY '"'
@@ -149,7 +145,7 @@ IGNORE 1 ROWS;
 -- SELECT * FROM Student;
 -- Load Examiner Data from CSV file
 LOAD DATA
-LOCAL INFILE "/var/www/html/chi/models/examiners.csv"
+LOCAL INFILE "thekaysmart.epizy.com/test/examiners.csv"
 INTO TABLE Examiner
 FIELDS TERMINATED BY ","
 OPTIONALLY ENCLOSED BY '"'
@@ -162,7 +158,7 @@ INSERT INTO Administrator VALUES ();
 
 -- Load Course Data from CSV file
 LOAD DATA
-LOCAL INFILE "/var/www/html/chi/models/courses.csv"
+LOCAL INFILE "thekaysmart.epizy.com/test/models/courses.csv"
 INTO TABLE Course
 FIELDS TERMINATED BY ","
 OPTIONALLY ENCLOSED BY '"'
@@ -173,7 +169,7 @@ IGNORE 1 ROWS
 
 -- Load Exam Data from CSV file
 LOAD DATA
-LOCAL INFILE "/var/www/html/chi/models/examination.csv"
+LOCAL INFILE "thekaysmart.epizy.com/test/models/examination.csv"
 INTO TABLE Exam
 FIELDS TERMINATED BY ","
 OPTIONALLY ENCLOSED BY '"'
@@ -185,7 +181,7 @@ IGNORE 1 ROWS
 -- SELECT * FROM Exam;
 -- Load Question Data from CSV file
 LOAD DATA
-LOCAL INFILE "/var/www/html/chi/models/questions.csv"
+LOCAL INFILE "thekaysmart.epizy.com/test/models/questions.csv"
 INTO TABLE Question
 FIELDS TERMINATED BY ","
 OPTIONALLY ENCLOSED BY '"'
@@ -195,7 +191,7 @@ IGNORE 1 ROWS
 -- SELECT * FROM Question;
 
 LOAD DATA
-LOCAL INFILE "/var/www/html/chi/models/course-examiner.csv"
+LOCAL INFILE "thekaysmart.epizy.com/test/models/course-examiner.csv"
 INTO TABLE Course_Examiner
 FIELDS TERMINATED BY ","
 OPTIONALLY ENCLOSED BY '"'
@@ -205,7 +201,7 @@ IGNORE 1 ROWS
 -- SELECT * FROM Course_Examiner;
 
 LOAD DATA
-LOCAL INFILE "/var/www/html/chi/models/course-student.csv"
+LOCAL INFILE "thekaysmart.epizy.com/test/models/course-student.csv"
 INTO TABLE Course_Student
 FIELDS TERMINATED BY ","
 OPTIONALLY ENCLOSED BY '"'
