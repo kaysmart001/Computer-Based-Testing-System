@@ -1,7 +1,7 @@
 <?php 
 ini_set('display_errors', 1);
 
-$link = mysqli_connect("127.0.0.1", "chisom", "sommyNkem6.9", "CBT");
+$link = mysqli_connect("sql311.epizy.com", "epiz_33459705", "hvZgW4p2guu7", "epiz_33459705_cbte_db");
 
 if(!$link){
     die("Connection failed: " .mysqli_connect_error());
